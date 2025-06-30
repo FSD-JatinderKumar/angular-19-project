@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import Swal from 'sweetalert2';
-import flatpickr from 'flatpickr';
+// import flatpickr from 'flatpickr';
 import { ClickToCallService } from '../service/click-to-call.service';
 
 declare var bootstrap: any;
@@ -84,15 +84,15 @@ export class ClickToCallComponent implements AfterViewInit {
       minTime.setHours(8, 0, 0);
     }
 
-    flatpickr('#timeInput', {
-      enableTime: true,
-      noCalendar: true,
-      dateFormat: 'H:i',
-      defaultDate: minTime,
-      minTime: this.formatTime(minTime),
-      maxTime: '20:00:00',
-      time_24hr: true,
-    });
+    // flatpickr('#timeInput', {
+    //   enableTime: true,
+    //   noCalendar: true,
+    //   dateFormat: 'H:i',
+    //   defaultDate: minTime,
+    //   minTime: this.formatTime(minTime),
+    //   maxTime: '20:00:00',
+    //   time_24hr: true,
+    // });
   }
 
   formatTime(date: Date): string {
